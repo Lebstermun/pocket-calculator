@@ -1,0 +1,30 @@
+h1,h2,h3,h4,h5 {color:DarkRed;}
+
+body {background-color:Peachpuff;}
+
+p {font-family:"Lucida Console", Monaco, monospace;}
+
+h1,h2,h3,h4,h5 {font-family:"Courier New", Courier, monospace;}
+
+
+table {font-family:"Courier New", Courier, monospace;}
+
+
+p {color: rgb(143, 86, 86);}
+
+table {color:chocolate;}
+
+p {font-size: 18px;}
+
+tbody {font-size: 20px;}
+
+button {
+  display: block;
+  margin: auto;
+  height: 3em;
+  font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
+}
+
+button:hover {
+  box-shadow: 0.3em 0.3em 0.3em #777777;
+}
