@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5 {font-family:"Courier New", Courier, monospace;}
 table {font-family:"Courier New", Courier, monospace;}
 
 
-p {color: rgb(143, 86, 86);}
+p {color: rgb(143, 86, 143);}
 
 table {color:chocolate;}
 
@@ -26,5 +26,5 @@ button {
 }
 
 button:hover {
-  box-shadow: 0.3em 0.3em 0.3em #777777;
+  box-shadow: 0.3em 0.3em 0.3em #24416496;
 }

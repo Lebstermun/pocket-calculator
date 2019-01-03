@@ -3,50 +3,61 @@
 <html>
 <head>
 <link href="CalculatorStyles/calcutorDesign.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="calculatorFunc.js" >
+
+</script>
   </head>
   <body>
   <h1 align=center> "Pocket Calculator"</h1>
   <div align=center class="button">
-  
+
     <table>
       <tr>
-    <td><button onclick=>AC</button>
-    <td><button onclick=>+/-</button>
-    <td><button onclick=>%</button>
-    <td><button onclick=>/</button>
+        <td><p class="output" id="calcOutput">
+    </tr>
+      <tr>
+
+    <td><button onclick= "allClearButton()">AC</button>
+      <div class="func" id="negative">
+    <td><button onclick= "negativeButton();">+/-</button>
+
+    <td><button onclick= "percentButton()">%</button>
+      <div class="func" id="divide">
+    <td><button onclick= "divideButton()">/</button>
     </tr>
     <br>
     <tr>
-    <td><button onclick=>1</button>
-    <td><button onclick=>2</button>
-    <td><button onclick=>3</button>
-    <td><button onclick=>x</button>
-    </tr>
-
-    <br>
-
-    <tr>
-    <td><button onclick=>4</button>
-    <td><button onclick=>5</button>
-    <td><button onclick=>6</button>
-    <td><button onclick=>-</button>
-    </tr>
-
-    <br>
-
-    <tr>
-    <td><button onclick=>7</button>
-    <td><button onclick=>8</button>
-    <td><button onclick=>9</button>
-    <td><button onclick=>+</button>
+    <td><button onclick= "oneButton()">1</button>
+      <div class="num" id="one">
+    <td><button onclick= "twoButton()">2</button>
+    <td><button onclick= "threeButton()">3</button>
+    <td><button onclick= "multiplyButton()">x</button>
     </tr>
 
     <br>
 
     <tr>
-    <td><button onclick=>0</button>
-    <td><button onclick=>.</button>
-    <td><button onclick=>=</button>
+    <td><button onclick= "fourButton()">4</button>
+    <td><button onclick= "fiveButton()">5</button>
+    <td><button onclick= "sixButton()">6</button>
+    <td><button onclick= "minusButton()">-</button>
+    </tr>
+
+    <br>
+
+    <tr>
+    <td><button onclick= "sevenButton()">7</button>
+    <td><button onclick= "eightButton()">8</button>
+    <td><button onclick= "nineButton()">9</button>
+    <td><button onclick= "plusButton()">+</button>
+    </tr>
+
+    <br>
+
+    <tr>
+    <td><button onclick= "zero()">0</button>
+    <td><button onclick= "decimal()">.</button>
+    <td><button onclick= "equals()">=</button>
     </tr>
 
     </table>
