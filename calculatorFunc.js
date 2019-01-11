@@ -1,12 +1,12 @@
 function allClearButton() {
-  let allClearButton= " ";
+  let allClearButton= " "                     ;
   var p=document.getElementById("calcOutput");
   p.innerHTML=`${allClearButton}`;
 }
-function negativeButton() {
-  let negativeButton= "(-)";
+function negationButton() {
+  let negationButton= "(+/-)";
   var p=document.getElementById("calcOutput");
-  p.innerHTML=`${negativeButton}`;
+  p.innerHTML=`${negationButton}`;
 }
 function percentButton() {
   let percentButton= "%";
@@ -92,7 +92,4 @@ function plusButton() {
     let equalsButton= "=";
     var p=document.getElementById("calcOutput");
     p.innerHTML=`${equalsButton}`;
-  }
-  .num{
-    
   }
