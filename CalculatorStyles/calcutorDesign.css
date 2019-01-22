@@ -1,6 +1,6 @@
-h1,h2,h3,h4,h5 {color:skyblue;}
+h1,h2,h3,h4,h5 {color:SkyBlue;}
 
-body {background-color:whitesmoke;}
+body {background-color:WhiteSmoke;}
 
 p {font-family:"Lucida Console", Monaco, monospace;}
 
@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5 {font-family:"Courier New", Courier, monospace;}
 table {font-family:"Courier New", Courier, monospace;}
 
 
-p {color: skyblue;}
+p {color: SkyBlue;}
 
 table {color:chocolate;}
 
@@ -30,12 +30,12 @@ button {
   margin: auto;
   height: 3em;
   font: 1.1em "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
-  color:deepskyblue;
-  background-color:lightblue;
-  border-color:whitesmoke;
+  color:DeepSkyBlue;
+  background-color:LightBlue;
+  border-color:Whitesmoke;
 }
 
 button:hover {
-   color:yellow;
-   background-color:darkblue;
-   border-color:bLACK;
+   color:Yellow;
+   background-color:DarkBlue;
+   border-color:Black;
