@@ -8,7 +8,7 @@ function number(num) {
   if(document.getElementById("output").innerHTML == "+" || document.getElementById("output").innerHTML == "-" || document.getElementById("output").innerHTML == "*" || document.getElementById("output").innerHTML == "/"){
     good += document.getElementById("output").innerHTML
     document.getElementById("output").innerHTML = ""
-}  if (document.getElementById("output").innerHTML == ""){
+}  if (document.getElementById("output").innerHTML == "0"){
     document.getElementById("output").innerHTML = ""
   }
   if (document.getElementById("output").innerHTML == answer){
@@ -26,12 +26,12 @@ function number(num) {
   }
 }
 function allClearButton(){
-  document.form.textview.value = ""
+  document.getElementById("output").innerHTML = "0"
   answer = ""
   good = ""
   standby = ""
 }
-function equals(){
+function equalsButton(){
   if (document.getElementById("output").innerHTML == "+" || document.getElementById("output").innerHTML == "-" || document.getElementById("output").innerHTML == "*" || document.getElementById("output").innerHTML == "/"){
   }else{
   good += standby
@@ -40,7 +40,6 @@ function equals(){
   document.getElementById("output").innerHTML = answer.toLocaleString();
   if (answer == "Infinity"){
     document.getElementById("output").innerHTML = "Error INFINITY"
-    document.body.style.backgroundImage = "url('https://media1.tenor.com/images/589b49d44d8c83f984a5f0a21a749e13/tenor.gif?itemid=4104435')";
   } else if (answer >= 1000000000) {
     let exponent = answer.toString().length-1;
     document.getElementById('output').innerHTML = answer / (10 ** (exponent)) + 'e' + exponent;
@@ -116,5 +115,14 @@ function divideButton() {
   good += document.getElementById("output").innerHTML
   standby = ""
   document.getElementById("output").innerHTML = "/"
+}
+}
+function percentButton() {
+  if (document.getElementById("output").innerHTML.indexOf("-") == 0) {
+    standby = eval(standby * 0.01).toFixed(7)
+    document.getElementById("output").innerHTML = "-" + standby
+  } else {
+    standby = eval(standby * 0.01).toFixed(7)
+    document.getElementById("output").innerHTML = standby
 }
 }
