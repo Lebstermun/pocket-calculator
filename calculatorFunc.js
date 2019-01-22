@@ -49,7 +49,7 @@ function equals(){
 }
 }
 
-function negate() {
+function negationButton() {
   if (document.getElementById("output").innerHTML == "-" + standby){
     document.getElementById("output").innerHTML = standby
   }else if (document.getElementById("output").innerHTML.indexOf("-") == 0 && document.getElementById("output").innerHTML != "-" + answer) {
@@ -63,7 +63,7 @@ function negate() {
   }
 console.log()
 }
-function addition() {
+function plusButton() {
   if(document.getElementById("output").innerHTML == "+" || document.getElementById("output").innerHTML == "-" || document.getElementById("output").innerHTML == "*" || document.getElementById("output").innerHTML == "/"){
   document.getElementById("output").innerHTML = "+"
 } else if (standby = ""){
@@ -77,7 +77,7 @@ function addition() {
 }
 }
 
-function subtraction() {
+function minusButton() {
   if(document.getElementById("output").innerHTML == "+" || document.getElementById("output").innerHTML == "-" || document.getElementById("output").innerHTML == "*" || document.getElementById("output").innerHTML == "/"){
   document.getElementById("output").innerHTML = "-"
 } else if (standby = ""){
@@ -91,7 +91,7 @@ function subtraction() {
 }
 }
 
-function multiplication() {
+function multiplyButton() {
   if(document.getElementById("output").innerHTML == "+" || document.getElementById("output").innerHTML == "-" || document.getElementById("output").innerHTML == "*" || document.getElementById("output").innerHTML == "/"){
   document.getElementById("output").innerHTML = "*"
 } else if (standby = ""){
@@ -105,7 +105,7 @@ function multiplication() {
 }
 }
 
-function division() {
+function divideButton() {
   if(document.getElementById("output").innerHTML == "+" || document.getElementById("output").innerHTML == "-" || document.getElementById("output").innerHTML == "*" || document.getElementById("output").innerHTML == "/"){
   document.getElementById("output").innerHTML = "/"
 } else if (standby = ""){
